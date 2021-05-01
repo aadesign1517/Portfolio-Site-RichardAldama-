@@ -1,14 +1,69 @@
 /*
+Fonts used:
+font-family: utopia-std-headline,serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: utopia-std,serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: brandon-grotesque,sans-serif;
+font-weight: 300;
+font-style: normal;
+
+font-family: brandon-grotesque,sans-serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: brandon-grotesque,sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: brandon-grotesque,sans-serif;
+font-weight: 700;
+font-style: italic;
+
 Colors used:
 Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
 */
 body {
-  background-color: LightGrey;
+  background-color: #ffffff;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
 }
 
-body {
-  font-family: utopia-std,serif;
+h1, h2, h3, h4, {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
   font-weight: 400;
-  font-style: normal;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+img {
+  width: 100%;
 }
