@@ -5,5 +5,8 @@ Secondary Color (Green): #489c79;
 */
 body {
   background-color: LightGrey;
+}
+
+body {
   font-family: 'Utopia', serif;
 }
