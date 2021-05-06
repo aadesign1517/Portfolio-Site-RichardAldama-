@@ -140,3 +140,14 @@ a:active {
   background-color: #009fc3;
   color: #ffffff;
 }
+
+/* Layout styling */
+.container {
+  padding 0 15px;
+}
+ .row {
+   margin:  25px 0; /* 25 px top and bottom. 0 left and right */
+ }
+ #hero h1 {
+   text-align: center;/* Centers text
+ }
