@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            height: 0;
+        }
+
+        .videoWrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        svg {
+            width: 100px;
+            height: auto;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-direction: reverse;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+    <div class="videoWrapper">
+        <video class="project-video" autoplay loop>
+            <source src="./videos/Final_CashApp_Animation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div>
+
+        </div>
+    </div>
+
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.06 44.06">
+            <defs>
+                <style>
+                    .cls-3 {
+                        fill: #0071aa
+                    }
+                </style>
+            </defs>
+            <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                        d="M33.55 4.84a21 21 0 00-21 36.4 21 21 0 1021-36.4zm.8 24.72A13.09 13.09 0 1136.09 23a13.1 13.1 0 01-1.74 6.56z"
+                        fill="#e6e6e6" />
+                    <path
+                        d="M27.54 9.71a13.09 13.09 0 00-13 0 13.1 13.1 0 00-4.83 4.79A12.94 12.94 0 008 21H0A21 21 0 0131.53 2.82z"
+                        fill="#4596ca" />
+                    <path class="cls-3"
+                        d="M27.54 32.33a13.25 13.25 0 004.79-4.79 13.09 13.09 0 000-13 13.17 13.17 0 00-4.79-4.79l4-6.89a21 21 0 010 36.4z" />
+                    <path
+                        d="M8 21a12.94 12.94 0 001.74 6.52 13.17 13.17 0 004.79 4.79 13.09 13.09 0 0013 0l4 6.89A21 21 0 010 21z"
+                        fill="#055489" />
+                    <path class="cls-3"
+                        d="M16.21 26.74a1.17 1.17 0 01-1.63-.12l-.06-.07a1.16 1.16 0 01-.12-1.62L17.32 22a1.15 1.15 0 011.62.12l.06.06a1.15 1.15 0 01.12 1.62z" />
+                    <path class="cls-3" d="M17.74 16.12a5.09 5.09 0 110 7.2 5.09 5.09 0 010-7.2z" />
+                    <path d="M18.81 17.2a3.57 3.57 0 110 5 3.58 3.58 0 010-5z" fill="#fff" />
+                </g>
+            </g>
+        </svg>
+    </div>
+</body>
+
+</html>

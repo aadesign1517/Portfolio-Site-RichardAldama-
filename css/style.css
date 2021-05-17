@@ -40,9 +40,10 @@ header {
   box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.2);
 }
 
-main{
-  padding-top: 100px;
+main {
+  padding-top: 99px;
 }
+
 nav {
   display: inline-block;
   width: 100%;
@@ -87,6 +88,7 @@ h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
@@ -182,16 +184,31 @@ nav>ul>li>a:active {
   /* 25 px top and bottom. 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #hero {
   background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: left;
 }
 
-#hero  h1 {
-  text-align: center;
+#hero h1 {
+  text-align: left;
   /* Centers text*/
+}
+
+#hero h3 {
+  margin: 0px;
+}
+
+#hero span {
+  display: block;
 }
 
 .center {
@@ -210,3 +227,74 @@ nav>ul>li>a:active {
   float: left;
   max-width: 100px;
 }
+
+/* ===============================
+Medium deivces (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+}
+
+/* ===============================
+Large deivces (1024px and larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ===============================
+X-Large deivces (1440px and larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
