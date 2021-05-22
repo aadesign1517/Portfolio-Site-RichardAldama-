@@ -142,7 +142,7 @@ nav>ul>li>a:active {
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 0.6s opacity;
 }
 
 .button:hover {
@@ -182,12 +182,6 @@ nav>ul>li>a:active {
 .row {
   margin: 25px 0;
   /* 25 px top and bottom. 0 left and right */
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 #hero {
@@ -250,7 +244,15 @@ Medium deivces (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 10px;
+    padding: 0px;
+  }
+
+  /* I can't get the above code right (class*="col-" add padding). When I add the padding, the item moves below the image. Help! */
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   #about-page h3 {
@@ -284,7 +286,7 @@ Large deivces (1024px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 10px;
+    padding: 0px;
   }
 
   .container {
@@ -298,3 +300,46 @@ Large deivces (1024px and larger)
 X-Large deivces (1440px and larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
+
+/* Animation */
+@keyframes color-change {
+  0% {
+    fill: #edc655
+  }
+
+  50% {
+    fill: #ed8055
+  }
+
+  100% {
+    fill: #ff0101
+  }
+}
+
+.sun {
+  animation: 2s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 2s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(306px, 4px);
+  }
+}
+
+.cloud-back {
+  animation: 4s cloud-move-reverse infinite alternate linear;
+}
