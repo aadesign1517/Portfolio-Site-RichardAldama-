@@ -66,6 +66,11 @@ nav>ul>li>a {
   color: #4a4a4a;
 }
 
+element.style {
+  max-width: 700px;
+  margin: auto;
+}
+
 body {
   background-color: #ffffff;
   font-family: brandon-grotesque, sans-serif;
@@ -107,7 +112,8 @@ h4 {
   font-weight: 400;
 }
 
-img {
+img,
+svg {
   width: 100%;
 }
 
@@ -222,6 +228,25 @@ nav>ul>li>a:active {
   max-width: 100px;
 }
 
+#work .desc {
+  padding: 50px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.contact {
+  align-content: center;
+}
+
 /* ===============================
 Medium deivces (640px and larger)
 ================================= */
@@ -240,19 +265,6 @@ Medium deivces (640px and larger)
 
   .col-md-6 {
     width: 50%;
-  }
-
-  [class*="col-"] {
-    float: left;
-    padding: 0px;
-  }
-
-  /* I can't get the above code right (class*="col-" add padding). When I add the padding, the item moves below the image. Help! */
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
   }
 
   #about-page h3 {
@@ -275,18 +287,12 @@ Large deivces (1024px and larger)
     margin-top: 4px;
   }
 
-  .col-7 {
+  .col-lg-7 {
     width: 58.33%;
   }
 
-  .col-5 {
+  .col-lg-5 {
     width: 41.66%;
-  }
-
-
-  [class*="col-"] {
-    float: left;
-    padding: 0px;
   }
 
   .container {
