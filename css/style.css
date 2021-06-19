@@ -55,10 +55,6 @@ nav>ul {
   padding: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
-
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -216,7 +212,7 @@ nav>ul>li>a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .profileimage {
@@ -247,8 +243,25 @@ nav>ul>li>a:active {
   align-content: center;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
 /* ===============================
-Medium deivces (640px and larger)
+Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 
@@ -263,12 +276,24 @@ Medium deivces (640px and larger)
     margin-top: 4px;
   }
 
+  nav>ul>li {
+    display: inline-block;
+  }
+
   .col-md-6 {
     width: 50%;
   }
 
   #about-page h3 {
     margin-top: 0;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
   }
 }
 
