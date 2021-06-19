@@ -31,7 +31,7 @@ Secondary Color (Orange): #cc6540;
 header {
   background-color: #dbf4f9;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   display: inline-block;
   width: 100%;
@@ -41,18 +41,13 @@ header {
 }
 
 main {
-  padding-top: 99px;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
-  padding: 0;
+  padding-top: 56px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -260,6 +255,16 @@ nav>ul>li>a:active {
   padding-right: 0;
 }
 
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(50, 50, 50, 0.2);
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
 /* ===============================
 Medium devices (640px and larger)
 ================================= */
@@ -270,14 +275,14 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  main {
+    padding-top: 99px;
+  }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
-  }
-
-  nav>ul>li {
-    display: inline-block;
   }
 
   .col-md-6 {
@@ -292,8 +297,21 @@ Medium devices (640px and larger)
     max-width: 250px;
   }
 
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    position: relative;
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 }
 
