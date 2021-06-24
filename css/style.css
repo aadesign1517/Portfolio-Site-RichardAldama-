@@ -216,7 +216,11 @@ nav>ul>li>a:active {
 
 .fooddecoration {
   float: left;
-  max-width: 100px;
+  max-width: 130px;
+}
+
+.editorinchefapp {
+  max-width: 300px;
 }
 
 #work .desc {
